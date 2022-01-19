@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Responsive Service Section In Tailwind CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+      *{
+      font-family: 'Nunito Sans';
+      }
+      img{
+      transition: box-shadow 0.4s ease-in-out;
+      }
+      img:hover{
+      box-shadow: 0 0 11px rgba(33,33,33,.4); 
+      }
+      h1{
+      color:#576574;
+      }
+      p.text-base{
+      color: #8395a7;
+      }
+      .fa{
+      font-size: 26px;
+      color: #576574;
+      }
+      @media(max-width: 430px){
+      .card{
+      margin: 10px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+            <h1 class="text-center text-6xl pt-6">Simple Product Card In Tailwindcss</h1>
+      </header>
+    <div class="container mx-auto flex flex-wrap my-8 justify-center">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="max-w-sm rounded overflow-hidden cursor-pointer rounded">
+          <img src="https://unsplash.com/photos/1-nx1QR5dTE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTl8fHByb2R1Y3R8fDB8fHx8MTY0MjU5MjQ1Mw&force=true&w=640">
+          <div class="flex items-center justify-between pt-3">
+            <h1 class="font-bold">Product 1</h1>
+            <i class="fa fa-heart-o"></i>
+          </div>
+          <p class=" text-base">
+            $9.99
+          </p>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden cursor-pointer rounded">
+          <img src="https://unsplash.com/photos/FlP6C5pkMKs/download?force=true&w=640">
+          <div class="flex items-center justify-between pt-3">
+            <h1 class="font-bold">Product 2</h1>
+            <i class="fa fa-heart-o"></i>
+          </div>
+          <p class=" text-base">
+            $6.99
+          </p>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden cursor-pointer rounded">
+          <img src="https://unsplash.com/photos/K62u25Jk6vo/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8cHJvZHVjdHx8MHx8fHwxNjQyNTkyNDUz&force=true&w=640">
+          <div class="flex items-center justify-between pt-3">
+            <h1 class="font-bold">Product 3</h1>
+            <i class="fa fa-heart-o"></i>
+          </div>
+          <p class=" text-base">
+            $15.99
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
